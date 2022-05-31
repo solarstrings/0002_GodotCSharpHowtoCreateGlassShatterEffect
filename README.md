@@ -1,4 +1,4 @@
-# Godot C# How to #2_How to Create a Glass ShatterEffect
+# Godot C# How-to #2: How to Create a Glass Shatter Effect
 
 Godot project of how to create a glass shatter effect that works on any sprite.
 
