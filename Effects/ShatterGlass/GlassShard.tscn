@@ -1,0 +1,9 @@
+[gd_scene format=2]
+
+[node name="GlassShard" type="RigidBody2D"]
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+
+[node name="Tween" type="Tween" parent="."]

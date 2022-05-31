@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Effects/ShatterGlass/ShatterGlass.cs" type="Script" id=1]
+
+[node name="ShatterGlass" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="LifeTimer" type="Timer" parent="."]
+
+[connection signal="timeout" from="LifeTimer" to="." method="OnLifeTimerTimeout"]

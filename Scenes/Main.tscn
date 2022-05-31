@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/blueglass.png" type="Texture" id=1]
+[ext_resource path="res://Effects/ShatterGlass/ShatterGlass.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Main.cs" type="Script" id=3]
+[ext_resource path="res://Assets/glassbreak.wav" type="AudioStream" id=4]
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="ShatterGlass" parent="Sprite" instance=ExtResource( 2 )]
+NumGlassShardsPoints = 50
+MinShatterForce = 100.0
+MaxShatterForce = 200.0
+ForceMultiplier = 20.0
+
+[node name="AudioStreamGlassBreak" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
